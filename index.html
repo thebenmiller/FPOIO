@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <title>FPO DOT EYE OH</title>
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
   </head>
@@ -11,10 +12,10 @@
     <h1 id='fpo'>FPO</h1>
   </body>
   <script>
-    (function(b){
-      var tap = function(){ b.className = b.className == 'a' ? 'b' : 'a' };
-      b.addEventListener('mousedown', tap);
-      b.addEventListener('touchstart', tap);
+    (function(body){
+      var tap = function(){ body.className = body.className == 'a' ? 'b' : 'a' };
+      var click = ('ontouchstart' in document.documentElement)  ? 'touchstart' : 'mousedown';
+      body.addEventListener(click, tap);
     })(document.body);
   </script>
   <style>
