@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover'>
+    <meta name="theme-color" content="#000000">
     <title>FPO DOT EYE OH!</title>
     <link rel="shortcut icon" href="/favicon.ico" sizes="any" type='image/x-icon'>
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -16,8 +17,8 @@
   </body>
   <script>
     (function(body){
-      var tap = function(e){ e.preventDefault(); body.className = body.className == 'a' ? 'b' : 'a' };
-      var click = ('ontouchstart' in document.documentElement)  ? 'touchstart' : 'mousedown';
+      const tap = (e) => { e.preventDefault(); body.className = body.className == 'a' ? 'b' : 'a' };
+      const click = ('ontouchstart' in document.documentElement)  ? 'touchstart' : 'mousedown';
       body.addEventListener(click, tap);
     })(document.body);
   </script>
