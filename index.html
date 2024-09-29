@@ -16,7 +16,7 @@
   </body>
   <script>
     (function(body){
-      var tap = function(){ body.className = body.className == 'a' ? 'b' : 'a' };
+      var tap = function(e){ e.preventDefault(); body.className = body.className == 'a' ? 'b' : 'a' };
       var click = ('ontouchstart' in document.documentElement)  ? 'touchstart' : 'mousedown';
       body.addEventListener(click, tap);
     })(document.body);
