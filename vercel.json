@@ -10,11 +10,11 @@
       ]
     },
     {
-      "source" : "/manifest.appcache",
-      "headers" : [
+      "source": "/manifest.appcache",
+      "headers": [
         {
-          "key" : "Content-Type",
-          "value" : "text/cache-manifest"
+          "key": "Content-Type",
+          "value": "text/cache-manifest"
         }
       ]
     }
